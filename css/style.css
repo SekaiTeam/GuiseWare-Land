@@ -23,8 +23,9 @@ h2 { font-size: 3vh; }
 h1 { font-size: 4vh; }
 
 ul {
-	margin: 0;
+	margin: 0 auto;
 	padding: 4px;
+	text-align: center;
 }
 
 ul li {
@@ -148,6 +149,7 @@ main {
 	align-items: center;
 	justify-content: center;
 	flex-grow: 1;
+	text-align: center;
 }
 
 label {
