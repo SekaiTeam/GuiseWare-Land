@@ -7,6 +7,21 @@
 
 html, body { width:  100%; height: 100%; overflow: hidden;}
 
+header nav a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex: 0.1 1 auto;
+}
+
 h2, h1, h3, p, li {
 	color: white;
 }
@@ -100,17 +115,19 @@ button {
 	border-radius: 4px;
 	border-width: 0px;
 	background: rgba(0, 0, 0, 0.4);
-    opacity: 0.5;
     color: white;
 }
 
-header label button:nth-child(1) {
-	background: #59BC36;
-	width: 150px;
-	opacity: 1;
+header nav button:nth-child(1n+2) {
+	color: #929292;
 }
 
-header label button:nth-child(5) {
+header nav button:nth-child(1) {
+	background: #59BC36;
+	width: 150px;
+}
+
+header nav button:nth-child(5) {
 	width: 100px;
 }
 
@@ -158,6 +175,7 @@ label {
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
+	text-align: center;
 	flex: 0.1 1 auto;
 }
 
@@ -176,7 +194,7 @@ body {
 		display: none;
 	}
 
-	header label:nth-child(2) {
+	header nav {
 		display: none;
 	}
 
