@@ -17,7 +17,7 @@ let activate = function (target) {
 	document.querySelectorAll("button[selected]").forEach(function(element,index) {
 		element.removeAttribute("selected");
 	});
-	let attribute = document.getElementsByName(target.getAttribute("name"))[1]
-	attribute.setAttribute("selected",'')
-	target.setAttribute("selected",'');
-}
+	let elements = document.getElementsByName(target.getAttribute("name"));
+	elements[0].setAttribute("selected",'');
+	elements[1].setAttribute("selected",'');
+};
