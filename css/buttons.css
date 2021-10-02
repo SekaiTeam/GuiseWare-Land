@@ -1,0 +1,99 @@
+button {
+	height: 25px;
+	width: 50px;
+	max-width: 200px;
+	border-radius: 4px;
+	border-width: 0px;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+button[selected], button:hover {
+	background: dodgerblue;
+}
+
+header nav button:nth-child(1) {
+	background: #59BC36;
+	color: white;
+	width: 150px;
+}
+
+header nav button:nth-child(1n+2)[selected],
+header nav button:nth-child(1n+2):hover
+{
+	color: white;
+}
+
+header nav button:nth-child(1n+2) {
+	color: #929292;
+}
+
+header nav button:nth-child(5) {
+	width: 100px;
+}
+
+footer label button {
+	background: #323232;
+	height: 50px;
+	border-radius: 10px;
+}
+
+footer label button,
+footer label button:hover,
+footer label button[selected]
+{
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+footer label button:nth-child(1) {
+	background-color: #467B3D;
+	background-image: url(../media/download_icon.png);
+}
+
+footer label button:nth-child(2) {
+	background-image: url(../media/links_icon.png);
+}
+
+footer label button:nth-child(3) {
+	background-image: url(../media/home_icon.png);
+}
+
+footer label button:nth-child(4) {
+	background-image: url(../media/shop_icon.png);
+}
+
+footer label button:nth-child(5) {
+	background-image: url(../media/dev_icon.png);
+}
+
+footer label button:nth-child(2):hover {
+	background-image: url(../media/links_hover_icon.png);
+}
+
+footer label button:nth-child(3):hover {
+	background-image: url(../media/home_hover_icon.png);
+}
+
+footer label button:nth-child(4):hover {
+	background-image: url(../media/shop_hover_icon.png);
+}
+
+footer label button:nth-child(5):hover {
+	background-image: url(../media/dev_hover_icon.png);
+}
+
+footer label button:nth-child(2)[selected] {
+	background-image: url(../media/links_hover_icon.png);
+}
+
+footer label button:nth-child(3)[selected] {
+	background-image: url(../media/home_hover_icon.png);
+}
+
+footer label button:nth-child(4)[selected] {
+	background-image: url(../media/shop_hover_icon.png);
+}
+
+footer label button:nth-child(5)[selected] {
+	background-image: url(../media/dev_hover_icon.png);
+}

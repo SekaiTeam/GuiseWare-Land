@@ -4,6 +4,7 @@
 		<title>Minecraft</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/buttons.css"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com"> 
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 		<link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
@@ -22,11 +23,21 @@
 				</span>
 			</label>
 			<nav>
-				<button onclick="get_template('download_launcher')">Download Launcher</button>
-				<button onclick="get_template('home')">Home</button>
-				<button onclick="get_template('shop')">Shop</button>
-				<button onclick="get_template('links')">Links</button>
-				<button onclick="get_template('dev')">Developers</button>
+				<button name = "launcher" onclick="get_template('download_launcher'); activate(this)">
+					Download Launcher
+				</button>
+				<button name = "home" onclick="get_template('home'); activate(this)" selected>
+					Home
+				</button>
+				<button name = "shop" onclick="get_template('shop'); activate(this)">
+					Shop
+				</button>
+				<button name = "links" onclick="get_template('links'); activate(this)">
+					Links
+				</button>
+				<button name = "dev" onclick="get_template('dev'); activate(this)">
+					Developers
+				</button>
 				<a href="">
 					<img src="media/vk_icon.png" />
 				</a>
@@ -39,11 +50,11 @@
 			<h6>GuiseWare Team 2021. All rights reserved</h6>
 			<h6>Server worked by Emerald Panel Hosting</h6>
 			<label>
-				<button onclick="get_template('download_launcher')"><img src="media/download_icon.png"/></button>
-				<button onclick="get_template('links')"><img src="media/links_icon.png"/></button>
-				<button onclick="get_template('home')"><img src="media/home_icon.png"/></button>
-				<button onclick="get_template('shop')"><img src="media/shop_icon.png"/></button>
-				<button onclick="get_template('dev')"><img src="media/dev_icon.png"/></button>
+				<button name = "launcher" onclick="get_template('download_launcher'); activate(this)" />
+				<button name = "links" onclick="get_template('links'); activate(this)" />
+				<button name = "home" onclick="get_template('home'); activate(this)" selected />
+				<button name = "shop" onclick="get_template('shop'); activate(this)" />
+				<button name = "dev" onclick="get_template('dev'); activate(this)" />
 			</label>
 		</footer>
 	</body>
