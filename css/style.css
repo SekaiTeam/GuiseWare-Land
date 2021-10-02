@@ -150,6 +150,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	background-image: url(../media/background.png);
+	background-position: center;
 	background-color: #000000;
 	background-repeat: no-repeat;
 }
